@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  ul
+  each message in messages.length ? messages : ['There are no values']
+    h3= message.text
+    p=  message.user
+    output= message.added
+

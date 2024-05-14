@@ -1,0 +1,10 @@
+extends layout
+
+block content 
+    div 
+        form(action="/new", method="POST")
+            label(for="user_name") Name of the user: 
+                input(type="text" id= "user_name") 
+            label(for="user_message") Message:
+                input(type="text" id = "user_message")
+            button SUBMIT
