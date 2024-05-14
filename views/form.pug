@@ -4,7 +4,7 @@ block content
     div 
         form(action="/new", method="POST")
             label(for="user_name") Name of the user: 
-                input(type="text" id= "user_name") 
+                input(type="text" id= "user_name" name="user_name") 
             label(for="user_message") Message:
-                input(type="text" id = "user_message")
+                input(type="text" id = "user_message" name="user_message")
             button SUBMIT
