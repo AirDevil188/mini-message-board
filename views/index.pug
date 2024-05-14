@@ -1,8 +1,12 @@
 extends layout
 
 block content
-  ul
-  each message in messages.length ? messages : ['There are no values']
-    h3= message.text
-    p=  message.user
-    output= message.added
+  div 
+    a(href="/new") 
+      li Post a new message!
+  div
+    ul
+    each message in messages.length ? messages : ['There are no values']
+      h3= message.text
+      p=  message.user
+      output= message.added
